@@ -1,3 +1,31 @@
+.car-list-container {
+  display: flex;
+}
+
+.car-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.car-list-item {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  flex-grow: 1;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
 .car-list-title {
-  background-color: purple;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.car-list-info {
+  background-color: white;
 }

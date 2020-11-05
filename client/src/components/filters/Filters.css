@@ -1,3 +1,22 @@
 .primary-filters-title {
   background-color: green;
 }
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: teal;
+  color: white;
+  font-weight: bolder;
+}
+
+.filter-submit {
+  background-color: white;
+}
