@@ -28,4 +28,17 @@ app.get('/api/years', (req, res) => {
     .then(parsedData => res.send(parsedData))
 })
 
+app.get('/api/getImages', (req, res) => {
+  const searchTerm = req.query
+  const newSearchTerm = searchTerm.searchTerm.replace(/\s/g, '+');
+  let url = `http://www.carimagery.com/api.asmx/GetImageUrl?searchTerm=${newSearchTerm}`
+  fetch(url)
+    .then(data => data.text())
+    .then(trimAgain => {
+      const trimmed = trimAgain.match(/[\n\r].*http:\s*([^\n\r]*).*</i)[1]
+      return `http:${trimmed}`
+    })
+    .then(parsedData => res.send(parsedData))
+})
+
 app.listen(port, () => console.log(`Server up on port ${port}`))

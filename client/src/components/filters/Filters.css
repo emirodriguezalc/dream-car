@@ -36,7 +36,7 @@
   flex-direction: row;
 }
 
-img {
+.car-cartoon {
   float: left;
   height: 350px;
   margin-left: 35px;

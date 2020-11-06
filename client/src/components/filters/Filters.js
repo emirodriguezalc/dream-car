@@ -98,7 +98,7 @@ const Filters = ({ setCars }) => {
         <button className="filter-buttons clear" onClick={() => clearCarsHandler(filters)}>Clear Results</button>
       </section >
       <section className="filter-showed">
-        <img src={image} alt="car caartoon" />
+        <img className="car-cartoon" src={image} alt="car caartoon" />
         {filters.length > 0 &&
           <div className="filter-list">
             <h2>Your filters : </h2>

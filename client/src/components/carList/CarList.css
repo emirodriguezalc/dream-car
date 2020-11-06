@@ -80,3 +80,18 @@
   margin-left: -18.5px;
   margin-top: -37px;
 }
+
+.car-list-image {
+  width: 400px;
+}
+
+.car-list-show-image {
+  margin: 6px;
+  padding: 6px;
+  background-color: white;
+  border: 2px solid #0d57b0;
+  border-radius: 4px;
+  color: #0d57b0;
+  height: fit-content;
+  font-weight: bolder;
+}
