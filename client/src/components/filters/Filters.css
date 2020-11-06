@@ -1,7 +1,3 @@
-.primary-filters-title {
-  background-color: green;
-}
-
 .filter-container {
   padding-bottom: 20px;
   display: flex;
@@ -55,6 +51,6 @@
 }
 
 .clear {
-  background-color: #6fb8de;
+  background-color: rgba(13, 87, 176, 50%);
   color: white;
 }

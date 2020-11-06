@@ -24,14 +24,13 @@ const CarList = ({ cars }) => {
    <ul className="car-list">
     {console.log(cars)}
     {cars && cars.Trims && cars.Trims.map(car => (
-
      <li className="car-list-item">
       <h3 className="car-list-title">{`${car.make_display} - ${car.model_name}`}</h3>
-      <h4 className="car-list-info">Made in: {car.make_country}</h4>
-      <h4 className="car-list-info">Type : {car.model_body}</h4>
-      <h4 className="car-list-info">Number of doors : {car.model_doors}</h4>
-      <h4 className="car-list-info">Transmission : {car.model_transmission_type}</h4>
-      <h4 className="car-list-info">Manufacture Year : {car.model_year}</h4>
+      <h4 className="car-list-info even">Made in: {car.make_country}</h4>
+      <h4 className="car-list-info odd">Type : {car.model_body}</h4>
+      <h4 className="car-list-info even">Number of doors : {car.model_doors}</h4>
+      <h4 className="car-list-info odd">Transmission : {car.model_transmission_type}</h4>
+      <h4 className="car-list-info even">Manufacture Year : {car.model_year}</h4>
       {car.model_id === image.id
        && <img alt="car" className="car-list-image" src={image.url}></img>
       }
