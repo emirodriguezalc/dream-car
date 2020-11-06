@@ -1,5 +1,6 @@
 .car-list-container {
   display: flex;
+  flex-direction: column;
 }
 
 .car-list {
@@ -28,4 +29,54 @@
 
 .car-list-info {
   background-color: white;
+}
+
+.car-list-empty {
+  position: relative;
+  background: #c4c6c1;
+  border-radius: 0.4em;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
+}
+
+.car-list-empty:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 37px solid transparent;
+  border-bottom-color: #c4c6c1;
+  border-top: 0;
+  border-left: 0;
+  margin-left: -18.5px;
+  margin-top: -37px;
+}
+
+.car-list-qtty {
+  position: relative;
+  background: #c4c6c1;
+  border-radius: 0.4em;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
+  width: fit-content;
+  margin-left: 53px;
+}
+
+.car-list-qtty:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 37px solid transparent;
+  border-bottom-color: #c4c6c1;
+  border-top: 0;
+  border-left: 0;
+  margin-left: -18.5px;
+  margin-top: -37px;
 }

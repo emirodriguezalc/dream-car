@@ -16,9 +16,8 @@ const Header = () => {
     <section>
       <h1 className="header-title">Dream Car</h1>
       <p className="header-description">{`Welcome to dream car! Use the filters to find the perfect car according to your needs.
-   Our database holds more that 500 records with cars from ${years.min_year} to ${years.max_year
-        }`}`
-  </p>
+   Our database holds more that 500 records with cars from ${years.min_year || 'loading'} to ${years.max_year || 'loading'}`}
+      </p>
     </section>
 
   )

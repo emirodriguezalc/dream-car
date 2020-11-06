@@ -3,8 +3,11 @@
 }
 
 .filter-container {
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 198, 193, 35%);
 }
 
 .dropdown {
@@ -12,11 +15,46 @@
 }
 
 .btn-primary {
-  background-color: teal;
+  background-color: #0d57b0;
   color: white;
   font-weight: bolder;
 }
 
-.filter-submit {
+.filter-buttons {
+  margin: 6px;
+  padding: 6px;
   background-color: white;
+  border: 2px solid #0d57b0;
+  border-radius: 4px;
+  color: #0d57b0;
+  height: fit-content;
+  font-weight: bolder;
+}
+
+.filter-showed {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  float: left;
+  height: 350px;
+  margin-left: 35px;
+}
+
+.filter-list {
+  background-color: #c6dae7;
+  border-radius: 6px;
+  margin: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 25px;
+  text-align-last: center;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.clear {
+  background-color: #6fb8de;
+  color: white;
 }
